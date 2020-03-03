@@ -52,6 +52,7 @@
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 
+;; Enable evil-lisp-state and bind to "SPC k"
 (use-package! evil-lisp-state
   :init (setq evil-lisp-state-global t)
   :config (evil-lisp-state-leader "SPC k"))

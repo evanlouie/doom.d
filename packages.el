@@ -50,4 +50,6 @@
 ;; our package manager can't deal with; see raxod502/straight.el#279)
 ;(package! builtin-package :recipe (:branch "develop"))
 
+;; Use evil-lisp-state from spacemacs
+;; https://github.com/syl20bnr/evil-lisp-state
 (package! evil-lisp-state)
