@@ -4,6 +4,9 @@
 
 ### Global
 
+Note: uses <https://github.com/lassik/emacs-format-all-the-code> under the hood
+for code formatting.
+
 ```sh
 yarn global add prettier
 ```
@@ -15,7 +18,7 @@ yarn global add prettier
 ```sh
 
 # Install clojure-lsp to local bin -- only do if (clojure +lsp)
-# Note: +lsp is quite buggy: https://github.com/snoe/clojure-lsp/issues/81
+# Note: +lsp is buggy: https://github.com/snoe/clojure-lsp/issues/81
 wget https://github.com/snoe/clojure-lsp/releases/download/release-20200121T234305/clojure-lsp
 chmod 755 clojure-lsp
 mv clojure-lsp /usr/local/bin
@@ -27,6 +30,7 @@ yarn global add node-cljfmt
 ### JavaScript/TypeScript
 
 ```sh
+# NOTE: This is not really needed. Tide already is a emacs frontend for tsserver
 yarn global add typescript-language-server # needed for (+lsp)
 ```
 
