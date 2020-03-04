@@ -13,7 +13,9 @@ yarn global add prettier
 <https://github.com/hlissner/doom-emacs/tree/develop/modules/lang/clojure>
 
 ```sh
-# Install clojure-lsp to local bin
+
+# Install clojure-lsp to local bin -- only do if (clojure +lsp)
+# Note: +lsp is quite buggy: https://github.com/snoe/clojure-lsp/issues/81
 wget https://github.com/snoe/clojure-lsp/releases/download/release-20200121T234305/clojure-lsp
 chmod 755 clojure-lsp
 mv clojure-lsp /usr/local/bin
@@ -22,11 +24,18 @@ brew install leiningen candid82/brew/joker
 yarn global add node-cljfmt
 ```
 
+### JavaScript/TypeScript
+
+```sh
+yarn global add typescript-language-server # needed for (+lsp)
+```
+
 ### Go
 
 <https://github.com/hlissner/doom-emacs/tree/develop/modules/lang/go>
 
 ```sh
+# +lsp will use gopls
 cd ~ # Run from root to install into GOPATH
 go get -u github.com/motemen/gore/cmd/gore
 go get -u github.com/stamblerre/gocode
