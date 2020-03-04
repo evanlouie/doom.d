@@ -67,6 +67,6 @@ gem install rubocop pry
 
 ```sh
 yarn global add markdownlint textlint
-brew install proselint
+brew install pandoc proselint
 gem install mdl
 ```
